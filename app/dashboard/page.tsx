@@ -134,7 +134,7 @@ export default function DashboardPage() {
           <p>
             • Recebeste{" "}
             <span className="font-semibold text-emerald-300">
-              2 créditos de oferta
+              Parabéns tens 2 créditos de oferta
             </span>{" "}
             quando criaste a conta.
           </p>
