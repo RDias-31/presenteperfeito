@@ -119,7 +119,7 @@ export default function DashboardPage() {
             disabled
             className="rounded-xl bg-slate-800 text-slate-300 border border-slate-600 px-4 py-3 text-sm shadow cursor-not-allowed opacity-60"
           >
-            📜 Consultar pesquisas (breve)
+            📜 Consultar pesquisas (em breve)
           </button>
         </section>
 
@@ -134,7 +134,7 @@ export default function DashboardPage() {
           <p>
             • Recebeste{" "}
             <span className="font-semibold text-emerald-300">
-              Parabéns tens 2 créditos de oferta
+              Parabéns tens 2 créditos de oferta 
             </span>{" "}
             quando criaste a conta.
           </p>
