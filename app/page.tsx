@@ -1,48 +1,48 @@
-// src/app/page.tsx
+"use client";
+
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-red-900 via-emerald-900 to-black text-white flex items-center justify-center px-4">
-      <div className="max-w-2xl w-full text-center space-y-6">
-        <p className="text-sm uppercase tracking-[0.3em] text-emerald-200">
-          Beta • Natal 2025
-        </p>
+    <main className="min-h-screen flex items-center justify-center px-6 text-center bg-gradient-to-b from-[#3a0000] to-[#003a34]">
+      <div className="max-w-2xl mx-auto text-white space-y-6">
+        <h2 className="text-sm opacity-80 tracking-widest">
+          BETA • NATAL 2025
+        </h2>
 
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+        <h1 className="text-4xl font-bold leading-tight">
           Não sabes o que oferecer este Natal? <br />
-          <span className="text-emerald-300">
-            O teu assistente de presentes responde por ti.
-          </span>
+          <span className="text-[#8BFCC2]">O teu assistente de presentes responde por ti.</span>
         </h1>
 
-        <p className="text-base md:text-lg text-emerald-100/80">
-          Responde a um pequeno quiz sobre a pessoa a quem queres oferecer um
-          presente e recebe{" "}
-          <span className="font-semibold">5 a 10 sugestões inteligentes</span>,
-          criadas com inteligência artificial. Poupa tempo, evita presentes
-          secos e ainda brilhas na noite de Natal. 🎁
+        <p className="opacity-90 leading-relaxed">
+          Responde a um pequeno quiz sobre a pessoa e recebe 5 a 10 sugestões inteligentes,
+          criadas com inteligência artificial. Poupa tempo, evita presentes secos e ainda brilhas na noite de Natal.
         </p>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 mt-4">
-          <a
-             href="/registo"
-             className="px-8 py-3 rounded-full bg-emerald-400 text-black font-semibold text-base md:text-lg shadow-lg shadow-emerald-900 hover:bg-emerald-300 transition-transform hover:-translate-y-0.5"
-        >
-            Começar agora
-        </a>
+        {/* NOVO: Botões Separados */}
+        <div className="flex items-center justify-center gap-4 pt-4">
 
+          <Link
+            href="/registo"
+            className="px-6 py-3 bg-[#8BFCC2] text-black rounded-lg font-semibold hover:opacity-90 transition"
+          >
+            Registar
+          </Link>
 
-          <p className="text-xs md:text-sm text-emerald-100/70">
-            No registo ganhas{" "}
-            <span className="font-semibold text-emerald-300">
-              2 créditos grátis
-            </span>{" "}
-            para testar a app.
-          </p>
+          <Link
+            href="/login"
+            className="px-6 py-3 border border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition"
+          >
+            Entrar
+          </Link>
+
         </div>
 
-        <div className="mt-6 text-xs md:text-sm text-emerald-100/60">
-          <p>Login, créditos e pagamentos vêm a seguir. Esta é só a base 😉</p>
-        </div>
+        <p className="text-xs opacity-70 pt-3">
+          No registo ganhas <span className="text-[#8BFCC2] font-bold">2 créditos grátis</span> para testar a app.
+        </p>
+
       </div>
     </main>
   );
